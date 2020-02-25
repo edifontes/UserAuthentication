@@ -1,0 +1,2 @@
+include ':app', ':userauthlibrary', ':userauthlibrary2'
+rootProject.name='User Authentication'
