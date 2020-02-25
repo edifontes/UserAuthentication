@@ -9,7 +9,7 @@ public class Authentication {
     }
 
     public String getFirstName() {
-        return "Edivan";
+        return "Simone";
     }
 
     public void setFirstName(String firstName) {
