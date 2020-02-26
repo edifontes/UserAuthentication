@@ -13,11 +13,17 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-
+//"http://vogellac2dm.appspot.com/register"
 public class httpClient {
-    public void post() {
+    private String url;
+
+    public httpClient(String url) {
+        this.url = url;
+    }
+
+    public void post(String url) {
         HttpClient client = new DefaultHttpClient();
-        HttpPost post = new HttpPost("http://vogellac2dm.appspot.com/register");
+        HttpPost post = new HttpPost(this.url);
         try {
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(1);
             nameValuePairs.add(new BasicNameValuePair("registrationid",
